@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fred's Pizza: Onde sabores ganham vida" />
+    <meta
+      name="keywords"
+      content="Fred's Pizza, Pizzaria, Pizza, Entrega, Delivery"
+    />
+    <link rel="shortcut icon" href="../imagens/minilogo.png" />
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <title>Painel de Login</title>
+  </head>
+
+  <body>
+    <header class="header-cadastro">
+      <h2 class="titulo-login">LOGIN</h2>
+    </header>
+
+    <form
+      class="form"
+      action="../controller/usuario.controller.php?op=login"
+      method="post"
+    >
+      <div class="card">
+        <div class="card-top">
+          <img
+            class="imglogin"
+            src="../imagens/user.png"
+            alt="Imagem de Usuario"
+          />
+          <h1 class="title">Painel de Login</h1>
+        </div>
+
+        <div class="card-group">
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            placeholder="Digite seu email"
+            required
+          />
+        </div>
+
+        <div class="card-group">
+          <label>Senha</label>
+          <input
+            type="password"
+            name="senha"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+
+        <div class="card-group">
+          <button type="submit">Entrar</button>
+        </div>
+
+        <div class="ir-cadastro">
+          <p>
+            Não possui uma conta?<a href="../view/painelcadastro.html"
+              >Cadastre-se</a
+            >
+          </p>
+        </div>
+
+        <div class="back-home">
+          <a href="../index.html">Voltar</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
